@@ -3,6 +3,9 @@ RecyclerView decoration
 
 This is an ItemDecoration class implemented RecyclerView.ItemDecoration. It can help us with item space issue when we have to deal with head space , tail space and grid space.
 
+# Screen shot:
+![SpaceLayoutDecoration](/Screenshot_20160623-093019.png)
+
 
 Here's how we use it. If your list is grid type, you can do it with this:
 
