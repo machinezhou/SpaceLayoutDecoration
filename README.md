@@ -27,8 +27,7 @@ mRecyclerView.addItemDecoration(
         new SpaceLayoutDecoration.Builder(SpaceLayoutDecoration.GRID_LAYOUT).span(2)
             .headCut(0)
             .tailCut(0)
-            .rowSpace(context.getResources().getDimensionPixelOffset(R.dimen.activity_horizontal_margin))
-            .columnSpace(context.getResources().getDimensionPixelOffset(R.dimen.activity_horizontal_margin))
+            .gridSpace(12)
             .build());
 ```
 
