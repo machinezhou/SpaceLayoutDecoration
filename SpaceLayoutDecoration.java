@@ -1,4 +1,4 @@
-package com.xuanyi.cqecar.ui.view.recyclerview;
+package xxx;
 
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
@@ -145,11 +145,9 @@ public class SpaceLayoutDecoration extends RecyclerView.ItemDecoration {
     outRect.top = 0;
     outRect.bottom = linearSpace;
     if (headCut != -1 && position == 0) {
-      outRect.top = 0;
-      outRect.bottom = headCut;
+      outRect.top = headCut;
     }
     if (tailCut != -1 && position == lastPosition) {
-      outRect.top = 0;
       outRect.bottom = tailCut;
     }
   }
@@ -158,11 +156,9 @@ public class SpaceLayoutDecoration extends RecyclerView.ItemDecoration {
     outRect.left = 0;
     outRect.right = linearSpace;
     if (headCut != -1 && position == 0) {
-      outRect.left = 0;
-      outRect.right = headCut;
+      outRect.left = headCut;
     }
     if (tailCut != -1 && position == lastPosition) {
-      outRect.left = 0;
       outRect.right = tailCut;
     }
   }
