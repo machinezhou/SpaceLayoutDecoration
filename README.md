@@ -7,20 +7,20 @@ This is an ItemDecoration class implemented RecyclerView.ItemDecoration. It can 
 Here's how we use it. If your list is grid type, you can do it with this:
 
 ```
-listView.addItemDecoration(
-        new SpaceLayoutDecoration.Builder(SpaceLayoutDecoration.GRID_LAYOUT).span(2)
+
+    mRecyclerView.addItemDecoration(
+        new SpaceLayoutDecoration.Builder(SpaceLayoutDecoration.GRID_LAYOUT).span(4)
+            .rowSpace(12)
+            .columnSpace(12)
             .headCut(0)
-            .tailCut(0)
-            .gridSpace(
-                context.getResources().getDimensionPixelOffset(R.dimen.activity_horizontal_margin))
-            .build());
+            .tailCut(0).leftCut(12).rightCut(12).build());
 ```
 
 or this:
 
 :
 ```
-listView.addItemDecoration(
+mRecyclerView.addItemDecoration(
         new SpaceLayoutDecoration.Builder(SpaceLayoutDecoration.GRID_LAYOUT).span(2)
             .headCut(0)
             .tailCut(0)
